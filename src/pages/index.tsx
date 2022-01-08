@@ -79,7 +79,7 @@ const IndexPage = () => {
                 <h2 className="soustitre_2">Réalisation - Montage</h2>
                 <h2 className="soustitre_2">Motion Design - Vues Aériennes</h2>
               </h2>
-              <h2 className="soustitre">06 70 94 84 96</h2>
+              <h2 className="soustitre">06 70 94 84 96 </h2>
               <h2 className="soustitre">contact@picaro.video</h2>
             </div>
           </div>
