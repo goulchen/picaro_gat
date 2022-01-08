@@ -1,3 +1,7 @@
+supprimer des fichier de l'histoire de github :
+git filter-repo --path source-plugin/helper/client_vimeo.js --invert-paths
+ 
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
