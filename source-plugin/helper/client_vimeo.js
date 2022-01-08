@@ -1,5 +1,5 @@
 import {Vimeo} from "vimeo";
-let ACCESS_TOKEN, CLIENT_ID, CLIENT_SECRET, PATH
+let ACCESS_TOKEN, CLIENT_ID, CLIENT_SECRET, PATH 
 
 try{
   var passwords = require('../../.passwords.json');
