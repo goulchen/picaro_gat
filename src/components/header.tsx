@@ -1,12 +1,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `black`,
     }}
   >
     <div
@@ -24,7 +25,21 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <div className="headerTitleLogo">
+            <div>
+              {
+                <StaticImage
+                  src="../images/logo_header.png"
+                  className="imageLogo"
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Logo Picaro"
+                  
+                />
+              }
+            </div>
+            <div className="titleWrapper"><div>{siteTitle}</div></div>
+          </div>
         </Link>
       </h1>
     </div>
