@@ -1,3 +1,5 @@
+external_webhook
+.passwords.json
 # Logs
 logs
 *.log
