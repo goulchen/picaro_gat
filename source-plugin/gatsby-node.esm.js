@@ -33,7 +33,7 @@ exports.sourceNodes = async ({
   
   const { createNode } = actions
   const videoDataBody = await vimeo_request()
-  console.log(videoDataBody.data)
+  // console.log(videoDataBody.data)
   // loop through data and create Gatsby nodes
   videoDataBody.data.forEach(async video =>{
     const videoId = createNodeId(`${VIDEO_NODE_TYPE}-${video.uri}`)
