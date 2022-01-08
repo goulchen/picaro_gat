@@ -2,9 +2,9 @@ name: Site build
 # workflow triggers
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   repository_dispatch:
     types: [build]
 
