@@ -35,7 +35,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: ftp.cluster011.hosting.ovh.net
+        server: ${{ secrets.FTP_URI }} 
         username: ${{ secrets.DEV_USER_ID }}
         password: ${{ secrets.DEV_FTP_PASSWORD }}
         local-dir: ./public/
