@@ -42,4 +42,4 @@ jobs:
         username: ${{ secrets.DEV_USER_ID }}
         password: ${{ secrets.DEV_FTP_PASSWORD }}
         local-dir: ./public/
-        server-dir : dev/
+        server-dir : prod/
