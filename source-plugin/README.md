@@ -1,6 +1,8 @@
 supprimer des fichier de l'histoire de github :
 git filter-repo --path source-plugin/helper/client_vimeo.js --invert-paths
  
+* * * * * /script.sh >> /var/log/script.log
+
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">

@@ -1,9 +1,8 @@
-
 .parentDiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   > div {
     width: 320px;
     height: 180px;
@@ -11,11 +10,38 @@
 }
 
 button {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.578);
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  opacity:0;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity:1;
+    -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s;
+  }
+}
+.col {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+.videoInfo {
+  padding: 20px;
+  font-size: medium;
+  line-height: 30px;
 }

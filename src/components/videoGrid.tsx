@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 // import Colonne from "react-bootstrap/Col"
 // import Row from "react-bootstrap/Row"
 // import Button from "react-bootstrap/Button"
-import {  GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import VideoModal from "./VideoModal"
 import useGetVideoQuery from "../queries/videoQueries"
 
@@ -33,10 +33,12 @@ const VideoGrid = () => {
       />
       <div className="parentDiv">
         {data.allVideo.nodes.map(video => {
-          const imageNode = data.allFile.nodes.filter(node => node.parent.id == video.id)[0]
+          const imageNode = data.allFile.nodes.filter(
+            node => node.parent.id == video.id
+          )[0]
           const image = getImage(imageNode)
           return (
-            <div key={video.link}>
+            <div className={"buttonWrapper"} key={video.link}>
               <button
                 className={"col"}
                 onClick={handleClick.bind(null, {
@@ -45,10 +47,13 @@ const VideoGrid = () => {
                   description: video.description,
                 })}
               >
+                <div className="overlay">
+                  <div className="videoInfo">{video.name}</div>
+                </div>
                 <GatsbyImage image={image} alt={video.name} />
               </button>
             </div>
-          ) 
+          )
         })}
       </div>
     </div>

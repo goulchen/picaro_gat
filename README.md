@@ -1,3 +1,5 @@
+docker run --name picaro_cron -a stdin -a stdout -a stderr cron
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
